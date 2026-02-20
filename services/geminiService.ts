@@ -4,7 +4,9 @@ import { stripBase64Prefix, getMimeTypeFromDataUrl } from "../utils/imageUtils";
 import { RoomDimensions } from "../types";
 
 // Initialize Gemini Client
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ 
+  apiKey: import.meta.env.VITE_GEMINI_API_KEY 
+})
 
 export const estimateRoomDimensions = async (roomImageBase64: string): Promise<RoomDimensions> => {
   try {
