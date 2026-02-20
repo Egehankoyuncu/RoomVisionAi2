@@ -1,0 +1,7 @@
+{
+  "name": "RoomVision AI",
+  "description": "Visualize furniture in your room instantly. Upload a room photo and a furniture item, and let AI place it perfectly with realistic lighting and perspective.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
